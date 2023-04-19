@@ -1,0 +1,537 @@
+@media screen and (max-width: 998px) {
+}
+@media screen and (max-width: 576px) and (max-height: 300px) {
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    min-width: 320px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(lightpink, beige);
+    color: rgb(97, 220, 97);
+    text-shadow: 1px 1px 3px black, 0 0 1em white, 0 0 0.2em white;
+    text-align: center;
+    box-shadow: 0px 0px 5px black;
+}
+.nav-links a{
+    color: rgb(97, 220, 97);
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.logo {
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(97, 220, 97);
+    text-shadow: 3px 3px 5px black;
+}
+.menu {
+    display: flex;
+    font-size: 20px;
+}
+.menu li{
+    padding: 5px 15px;
+}
+.menu li a:hover{
+    transition: all .3s;
+    color:rgb(124, 255, 211);
+}
+
+#checkbox_toggle{
+    display: none;
+}
+.hamburger{
+    font-size: 24px;
+    cursor: pointer;
+    display:none;
+}
+.hamburger-line{
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamburger-line::before,
+.hamburger-line::after{
+    background-color: black;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%
+}
+.hamburger-line::before{
+    top: 7px;
+}
+.hamburger-line::after{
+    top: -7px;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: grey;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 8px;
+    }
+    .menu li{
+        transition: all .5s;
+    }
+    .menu li:hover {
+        background-color: aquamarine;
+    }
+    .menu li a{
+        color: green;
+        display: block;
+        padding: 15px;
+    }
+    #checkbox_toggle:checked ~ .menu{
+        display: block;
+        max-height: 100%;
+        transition: all .5s;
+    }
+    .hamburger{
+        display: block;
+        padding: 20px 0;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+        background-color: transparent;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
+
+
+body{
+    background: rgb(230, 240, 209);
+    background-size: 500px;
+    text-align:center;
+    font-size:18px;
+}
+
+.head{
+    background:rgb(253, 246, 172);
+    box-shadow: 0px 0px 13px;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+body{
+    margin: 0px;
+}
+
+.block{
+    margin: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(213, 255, 207);
+    text-align: center;
+    box-shadow: 0px 0px 10px;
+}
+
+.roomflowers{
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    text-shadow: green 0px 0px 5px;
+    padding-top: 10px;
+}
+
+.textroomflowers{
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.more{
+    page-break-after: always;
+}
+
+
+
+.astra{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.astratext{
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.astratext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.barhatsitext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.barhatsi{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.barhatsitext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.georgina{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.georginatext{
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.georginatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.gerbera{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.gerberatext{
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.gerberatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.godezia{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.godeziatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.godeziatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.iris{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.iristext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.iristext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.calendula{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.calendulatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.calendulatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.crokus{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.crokustext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.crokustext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.lavanda{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.lavandatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.lavandatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.liliya{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.liliyatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.liliyatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.margaritka{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.margaritkatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.margaritkatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.narciss{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.narcisstext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.narcisstext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.nasturzia{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.nasturziatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.nasturziatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.petuniya{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.petuniyatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.petuniyatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.pion{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.piontext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.piontext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.rose{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.rosetext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.rosetext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.rudbekia{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.rudbekiatext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142);
+}
+.rudbekiatext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.tulip{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.tuliptext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.tuliptext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.flocks{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.flockstext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.flockstext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+.hrizantema{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 18px green;
+}
+.hrizantematext{
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 0px 1px 5px rgb(244, 122, 142)
+}
+.hrizantematext1{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+
